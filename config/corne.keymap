@@ -30,13 +30,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   | CAP |     | UP  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |HOME | LFT | DWN | RGT |     |  DEL |
-// | SHFT | LWR |     |     |     |     |   | END |     |     |     |     |      |
+// | SHFT | LWR | RSE |     |     |     |   | END |     |     |     |     |      |
 //                    | LWR | GUI | SPC |   | BCK | ENT | ALT |
                         display-name = "Lower";
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp CAPS  &kp N7   &kp UP   &kp N9      &kp N0 &trans
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp HOME  &kp LEFT &kp DOWN &kp RIGHT   &trans &kp DEL
-   &kp LSHFT  &to 2        &trans       &trans       &trans       &trans         &kp END   &trans   &trans   &trans      &trans &trans
+   &kp LSHFT  &to 2        &to 0       &trans       &trans       &trans         &kp END   &trans   &trans   &trans      &trans &trans
                           	        &to 1        &kp LGUI     &kp SPACE      &trans    &trans   &kp RALT
                         >;
                 };
